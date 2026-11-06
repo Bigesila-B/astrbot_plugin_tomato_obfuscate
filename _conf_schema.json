@@ -1,0 +1,32 @@
+{
+  "jpeg_quality": {
+    "description": "输出JPEG质量",
+    "type": "float",
+    "hint": "输出图片的JPEG压缩质量，取值 0.0 ~ 1.0，默认 0.95。质量越高，解混淆后还原度越好。",
+    "default": 0.95
+  },
+  "enable_llm_tool": {
+    "description": "启用LLM工具调用",
+    "type": "bool",
+    "hint": "开启后，LLM可在自然语言对话中自动调用本插件的混淆/解混淆工具。",
+    "default": true
+  },
+  "obfuscate_keywords": {
+    "description": "混淆触发关键词",
+    "type": "string",
+    "hint": "当消息文本命中以下任一关键词时触发混淆（用 | 分隔，无需空格）。",
+    "default": "混淆|打乱|加密图片|加密图|打乱图片|混淆图片|搅乱"
+  },
+  "deobfuscate_keywords": {
+    "description": "解混淆触发关键词",
+    "type": "string",
+    "hint": "当消息文本命中以下任一关键词时触发解混淆（用 | 分隔，无需空格）。",
+    "default": "解混淆|还原|解密图片|解密图|解开混淆|还原图片|解开"
+  },
+  "max_image_pixels": {
+    "description": "最大处理像素数",
+    "type": "int",
+    "hint": "图片宽×高的上限，超过此值会自动等比缩小，避免大图导致处理超时。",
+    "default": 2073600
+  }
+}

@@ -1,0 +1,6 @@
+name: astrbot_plugin_tomato_obfuscate
+display_name: 番茄图片混淆
+desc: 基于Gilbert空间填充曲线的图片混淆/解混淆插件，支持指令、关键词、LLM智能调用三种触发方式。
+version: v1.0.0
+author: Bigesila-B
+repo: https://github.com/Bigesila-B/astrbot_plugin_tomato_obfuscate
