@@ -35,7 +35,7 @@ except ImportError:  # 兼容直接以模块名加载的情况
     "astrbot_plugin_tomato_obfuscate",
     "Bigesila-B",
     "番茄图片混淆：基于Gilbert空间填充曲线的图片混淆/解混淆插件，支持指令、关键词、LLM智能调用三种触发方式。",
-    "1.0.0",
+    "1.0.1",
 )
 class TomatoObfuscatePlugin(Star):
     def __init__(self, context: Context):
